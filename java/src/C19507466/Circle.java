@@ -53,14 +53,13 @@ public class Circle extends Visual
               line(i, halfheight - lerpedBuffer[i] * halfheight * 4, i,halfheight + lerpedBuffer[i] * halfheight * 4);
               //println(ab.get(i));
           }
-          float halfwidth = width / 2;
           for(int i = 0; i < ab.size(); i++)
           {
               float c = map(i, 0, ab.size(), 0, -255);
               stroke(c, 255, 255);
               lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.1f);
   
-              line(halfwidth - lerpedBuffer[i] * halfwidth * 4, i, halfheight + lerpedBuffer[i] * halfheight * 4,i);
+              line(0 - lerpedBuffer[i] * 305 * 4, i, 115 + lerpedBuffer[i] * 380 * 4,i);
               //println(ab.get(i));
           }
       }
