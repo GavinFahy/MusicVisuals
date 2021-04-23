@@ -19,7 +19,6 @@ public class GavinsVisual extends Visual {
     {
         if (key == '1')
         {
-            println("Press 1 to play music");
             getAudioPlayer().cue(0);
             getAudioPlayer().play();
         }
@@ -27,7 +26,7 @@ public class GavinsVisual extends Visual {
 
     public void draw()
     {
-
+        background(0);
     }
 
 }
