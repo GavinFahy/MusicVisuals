@@ -4,40 +4,44 @@ import ddf.minim.AudioBuffer;
 import ddf.minim.AudioPlayer;
 import ddf.minim.Minim;
 import ie.tudublin.*;
+import processing.core.PApplet;
 
 public class Lines extends Visual
 {
-      //step 1
-      Minim minim; //connect to minim libary
-      //step 2
-      //AudioInput ai; //How to connect to mic
-      //step 3
-      AudioBuffer ab; //samples
-      //connect to mp3 file
-      AudioPlayer ap;
+    GavinsVisual gv;
+    float cy = 0;
+    float[] lerpedBuffer;
+
+    public Lines(GavinsVisual gv)
+    {
+        this.gv = gv;
+        cy = this.gv.height / 2;
+    }
+
+       public void setup()
+    {
+        colorMode(HSB);
+        lerpedBuffer = new float[width];
+    }
+
+    public void render()
+    {
+        gv.colorMode(PApplet.HSB);
+        for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
+        {
+            gv.stroke(
+                PApplet.map(i, 0, gv.getAudioBuffer().size(), 0, 255)
+                , 255
+                , 255
+            );
+
+            gv.line(i, cy, i, cy + cy * gv.getAudioBuffer().get(i));
+        }
+    }
   
-      float[] lerpedBuffer;
-  
-  
-      public void settings()
-      {
-          size(700,700);
-      } 
+ 
+
   /*
-      public void setup()
-      {
-          //step4
-          minim = new Minim(this);
-          //ai = minim.getLineIn(Minim.MONO, width, 44100, 16);//first is number of channels 2nd is frame size 3rd sample rate
-          ap = minim.loadFile("heroplanet.mp3", width);
-          ap.play();
-          //ab = ai.mix; // connect buffer to mic
-          ab = ap.mix; //connects buffer to mp3 file
-          //add colour
-          colorMode(HSB);
-          lerpedBuffer = new float[width];
-      }
-  */
       public void draw()
       {
           //step 5
@@ -63,4 +67,5 @@ public class Lines extends Visual
               //println(ab.get(i));
           }
       }
+      */
 }

@@ -3,6 +3,9 @@ package C19507466;
 import ie.tudublin.*;
 
 public class GavinsVisual extends Visual {
+
+    Lines L;
+
     public void settings()
     {
         size(700, 700);
@@ -13,6 +16,8 @@ public class GavinsVisual extends Visual {
         startMinim();
 
         loadAudio("Michael Calfan - Resurrection (Axwell's Recut Club Version).mp3");
+
+        L = new Lines(this);
     }
 
     public void keyPressed()
@@ -22,11 +27,16 @@ public class GavinsVisual extends Visual {
             getAudioPlayer().cue(0);
             getAudioPlayer().play();
         }
+        if (key == '2')
+        {
+            getAudioPlayer().pause();
+        }
     }
 
     public void draw()
     {
         background(0);
+        L.render();
     }
 
 }
