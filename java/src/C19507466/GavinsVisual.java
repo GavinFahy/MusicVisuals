@@ -24,12 +24,15 @@ public class GavinsVisual extends Visual {
     {
         if (key == '1')
         {
-            getAudioPlayer().cue(0);
             getAudioPlayer().play();
         }
         if (key == '2')
         {
             getAudioPlayer().pause();
+        }
+        if (key == '3')
+        {
+            getAudioPlayer().cue(0);
         }
     }
 
