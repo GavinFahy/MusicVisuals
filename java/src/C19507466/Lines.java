@@ -1,27 +1,16 @@
 package C19507466;
 
-import ddf.minim.AudioBuffer;
-import ddf.minim.AudioPlayer;
-import ddf.minim.Minim;
-import ie.tudublin.*;
 import processing.core.PApplet;
 
-public class Lines extends Visual
+public class Lines
 {
     GavinsVisual gv;
     float cy = 0;
-    float[] lerpedBuffer;
 
     public Lines(GavinsVisual gv)
     {
         this.gv = gv;
         cy = this.gv.height / 2;
-    }
-
-       public void setup()
-    {
-        colorMode(HSB);
-        lerpedBuffer = new float[width];
     }
 
     public void render()

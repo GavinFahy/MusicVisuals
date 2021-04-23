@@ -5,6 +5,7 @@ import ie.tudublin.*;
 public class GavinsVisual extends Visual {
 
     Lines L;
+    Circle c;
 
     public void settings()
     {
@@ -39,7 +40,9 @@ public class GavinsVisual extends Visual {
     public void draw()
     {
         background(0);
+
         L.render();
+        c.render();
     }
 
 }
