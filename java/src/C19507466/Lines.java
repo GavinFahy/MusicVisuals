@@ -1,31 +1,23 @@
 package C19507466;
 
-import processing.core.PApplet;
+//import processing.core.PApplet;
 
 public class Lines
 {
     GavinsVisual gv;
     float cy = 0;
+    float wy = 0;
+
 
     public Lines(GavinsVisual gv)
     {
         this.gv = gv;
-        cy = this.gv.height / 2;
+        cy = this.gv.height / 350;
     }
 
     public void render()
     {
-        gv.colorMode(PApplet.HSB);
-        for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
-        {
-            gv.stroke(
-                PApplet.map(i, 0, gv.getAudioBuffer().size(), 0, 255)
-                , 255
-                , 255
-            );
 
-            gv.line(i, cy, i, cy + cy * gv.getAudioBuffer().get(i));
-        }
     }
   
  

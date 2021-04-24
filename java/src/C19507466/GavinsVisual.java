@@ -4,7 +4,7 @@ import ie.tudublin.*;
 
 public class GavinsVisual extends Visual {
 
-    Lines L;
+    Lines l;
     Circle c;
 
     public void settings()
@@ -18,7 +18,8 @@ public class GavinsVisual extends Visual {
 
         loadAudio("Michael Calfan - Resurrection (Axwell's Recut Club Version).mp3");
 
-        L = new Lines(this);
+        l = new Lines(this);
+        c = new Circle(this);
     }
 
     public void keyPressed()
@@ -41,8 +42,24 @@ public class GavinsVisual extends Visual {
     {
         background(0);
 
-        L.render();
+        try
+        {
+            // Call this if you want to use FFT data
+            calculateFFT(); 
+        }
+        catch(VisualException e)
+        {
+            e.printStackTrace();
+        }
+        // Call this is you want to use frequency bands
+        calculateFrequencyBands(); 
+
+        // Call this is you want to get the average amplitude
+        calculateAverageAmplitude();
+        
+       // l.render();
         c.render();
     }
+
 
 }
