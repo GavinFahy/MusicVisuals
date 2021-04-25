@@ -9,7 +9,7 @@ public class GavinsVisual extends Visual {
 
     public void settings()
     {
-        size(700, 700);
+        size(800, 800);
     }
 
     public void setup()
