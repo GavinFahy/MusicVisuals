@@ -4,21 +4,22 @@ import ie.tudublin.*;
 
 public class GavinsVisual extends Visual {
 
-    Lines l;
+    Sphere s;
     Circle c;
 
     public void settings()
     {
-        size(800, 800);
+        size(700, 700, P3D);
     }
 
     public void setup()
     {
         startMinim();
+        surface.setResizable(true);
 
         loadAudio("Michael Calfan - Resurrection (Axwell's Recut Club Version).mp3");
 
-        l = new Lines(this);
+        s = new Sphere(this);
         c = new Circle(this);
     }
 
@@ -41,7 +42,7 @@ public class GavinsVisual extends Visual {
     public void draw()
     {
         background(0);
-
+        surface.setResizable(true);
         try
         {
             // Call this if you want to use FFT data
@@ -57,9 +58,7 @@ public class GavinsVisual extends Visual {
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
         
-       // l.render();
+        s.render();
         c.render();
     }
-
-
 }
