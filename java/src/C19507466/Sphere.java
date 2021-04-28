@@ -1,8 +1,6 @@
 package C19507466;
 
-import processing.core.*;
-
-//import processing.core.PApplet;
+import processing.core.PApplet;
 
 public class Sphere
 {
