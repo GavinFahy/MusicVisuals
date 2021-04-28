@@ -6,6 +6,7 @@ public class GavinsVisual extends Visual {
 
     Sphere s;
     Circle c;
+    Cube cube;
 
     public void settings()
     {
@@ -21,6 +22,7 @@ public class GavinsVisual extends Visual {
 
         s = new Sphere(this);
         c = new Circle(this);
+        cube = new Cube(this);
     }
 
     public void keyPressed()
@@ -58,7 +60,8 @@ public class GavinsVisual extends Visual {
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
         
-        s.render();
-        c.render();
+        //s.render();
+        //c.render();
+        cube.render();
     }
 }
