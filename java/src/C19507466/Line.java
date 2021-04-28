@@ -28,11 +28,18 @@ public class Line {
             gv.line(1, 1, 699,50 * gv.getAudioBuffer().get(i));
         }
 
+        //right hand side line
         for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
         {
             gv.stroke(PApplet.map(i, 0, gv.getAudioBuffer().size(), 0, 255), 255, 255);
-            gv.line(699, 699 * gv.getAudioBuffer().get(i), 699 * gv.getAudioBuffer().get(i),50* gv.getAudioBuffer().get(i));
+            gv.line(699, 699, 699,50 * gv.getAudioBuffer().get(i));
+        }
+
+        //bottom line
+        for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
+        {
+            gv.stroke(PApplet.map(i, 0, gv.getAudioBuffer().size(), 0, 255), 255, 255);
+            gv.line(699, 699, 1,699);
         }
     }
-
 }
