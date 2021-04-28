@@ -7,6 +7,7 @@ public class GavinsVisual extends Visual {
     Sphere s;
     Circle c;
     Cube cube;
+    Line l;
 
     public void settings()
     {
@@ -23,6 +24,7 @@ public class GavinsVisual extends Visual {
         s = new Sphere(this);
         c = new Circle(this);
         cube = new Cube(this);
+        l = new Line(this);
     }
 
     public void keyPressed()
@@ -63,5 +65,6 @@ public class GavinsVisual extends Visual {
         //s.render();
         //c.render();
         cube.render();
+        l.render();
     }
 }
