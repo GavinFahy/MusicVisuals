@@ -15,6 +15,7 @@ public class Sphere
 
     public void render()
     {
+        gv.colorMode(PApplet.HSB);
         gv.pushMatrix();
         gv.translate(350, 350, -200);
         gv.rotateY(angle);
