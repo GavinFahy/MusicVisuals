@@ -64,7 +64,7 @@ public class GavinsVisual extends Visual {
         
         //s.render();
         //c.render();
-        //cube.render();
+        cube.render();
         l.render();
     }
 }

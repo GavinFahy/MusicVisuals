@@ -18,28 +18,28 @@ public class Line {
         for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
         {
             gv.stroke(PApplet.map(i, 0, gv.getAudioBuffer().size(), 0, 255), 255, 255);
-            gv.line(1,1,1,699 * gv.getAudioBuffer().get(i));
+            gv.line(20,20,20,680 / gv.getAudioBuffer().get(i));
         }
 
         //top line
         for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
         {
             gv.stroke(PApplet.map(i, 0, gv.getAudioBuffer().size(), 0, 255), 255, 255);
-            gv.line(10, 10, 690,10);
+            gv.line(20, 20, 680 / gv.getAudioBuffer().get(i),20);
         }
 
         //right hand side line
-       /* for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
+        for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
         {
             gv.stroke(PApplet.map(i, 0, gv.getAudioBuffer().size(), 0, 255), 255, 255);
-            gv.line(1 * gv.getAudioBuffer().get(i), 699, 1,699);
+            gv.line(680, 20, 680,680 / gv.getAudioBuffer().get(i));
         }
-        */
+        
         //bottom line
         for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
         {
             gv.stroke(PApplet.map(i, 0, gv.getAudioBuffer().size(), 0, 255), 255, 255);
-            gv.line(699 * gv.getAudioBuffer().get(i), 699, 1,699);
+            gv.line(680, 680, 680 / gv.getAudioBuffer().get(i),680);
         }
     }
 }

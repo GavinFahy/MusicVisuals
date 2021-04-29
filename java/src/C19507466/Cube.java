@@ -33,7 +33,7 @@ public class Cube {
         gv.rotateZ(angle);
         gv.noFill();
         gv.stroke(PApplet.map(gv.getSmoothedAmplitude()*5,0,1,0,255),255,255);
-        gv.box(100+ (gv.getSmoothedAmplitude() * 10));
+        gv.box(300+ (gv.getSmoothedAmplitude() * 10));
         gv.popMatrix();
         angle += gv.getSmoothedAmplitude()*20;
 
