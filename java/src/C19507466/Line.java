@@ -25,16 +25,16 @@ public class Line {
         for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
         {
             gv.stroke(PApplet.map(i, 0, gv.getAudioBuffer().size(), 0, 255), 255, 255);
-            gv.line(1, 1 * gv.getAudioBuffer().get(i), 699,1);
+            gv.line(10, 10, 690,10);
         }
 
         //right hand side line
-        for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
+       /* for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
         {
             gv.stroke(PApplet.map(i, 0, gv.getAudioBuffer().size(), 0, 255), 255, 255);
             gv.line(1 * gv.getAudioBuffer().get(i), 699, 1,699);
         }
-
+        */
         //bottom line
         for(int i = 0 ; i < gv.getAudioBuffer().size() ; i ++)
         {
