@@ -94,6 +94,11 @@ public class GavinsVisual extends Visual {
         if (key == '3')
         {
             instructionsOption = 1;
+
+            sphereOption = 0;
+            circleOption = 0;
+            lineOption = 0;
+            cubeOption = 0;
         }
 
         if(instructionsOption == 1)
