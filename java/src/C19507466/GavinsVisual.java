@@ -8,6 +8,7 @@ public class GavinsVisual extends Visual {
     Circle c;
     Cube cube;
     Line l;
+    Instructions i;
 
     public void settings()
     {
@@ -25,6 +26,7 @@ public class GavinsVisual extends Visual {
         c = new Circle(this);
         cube = new Cube(this);
         l = new Line(this);
+        i = new Instructions(this);
     }
 
     public void keyPressed()
@@ -61,7 +63,8 @@ public class GavinsVisual extends Visual {
 
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
-        
+
+        i.render();
         
         
         if (key == '1')
