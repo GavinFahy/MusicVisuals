@@ -10,6 +10,12 @@ public class GavinsVisual extends Visual {
     Line l;
     Instructions i;
 
+    int cubeOption = 0;
+    int sphereOption = 0;
+    int circleOption = 0;
+    int lineOption = 0;
+    int instructionsOption = 0;
+
     public void settings()
     {
         size(700, 700, P3D);

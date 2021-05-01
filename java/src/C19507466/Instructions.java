@@ -11,10 +11,10 @@ public class Instructions {
 
     public void render()
     {
-       gv.text("press p to play", 350, 350);
-       gv.text("Press s to stop", 250, 250);
-       gv.text("Press r to rewind", 150, 150);
-       gv.text("Press 1 to get visual 1", 25, 50);
-       gv.text("Press 2 to get visual 2", 50, 25);
+       gv.text("press p to play", 300, 310);
+       gv.text("Press s to stop", 300, 330);
+       gv.text("Press r to rewind", 300, 350);
+       gv.text("Press 1 to get visual 1", 300, 370);
+       gv.text("Press 2 to get visual 2", 300, 390);
     }
 }
