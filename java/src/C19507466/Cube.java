@@ -69,5 +69,15 @@ public class Cube {
         gv.box(100+ (gv.getSmoothedAmplitude() * 10));
         gv.popMatrix();
         angle += gv.getSmoothedAmplitude()*20;
+
+         //box 2 center cube
+         gv.pushMatrix();
+         gv.translate(350, 350, -400);
+         gv.rotateZ(angle);
+         gv.noFill();
+         gv.stroke(PApplet.map(gv.getSmoothedAmplitude()*5,0,1,0,255),255,255);
+         gv.box(50+ (gv.getSmoothedAmplitude() * 10));
+         gv.popMatrix();
+         angle += gv.getSmoothedAmplitude()*20;
     }
 }

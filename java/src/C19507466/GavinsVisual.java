@@ -29,15 +29,15 @@ public class GavinsVisual extends Visual {
 
     public void keyPressed()
     {
-        if (key == '1')
+        if (key == 'p')
         {
             getAudioPlayer().play();
         }
-        if (key == '2')
+        if (key == 's')
         {
             getAudioPlayer().pause();
         }
-        if (key == '3')
+        if (key == 'r')
         {
             getAudioPlayer().cue(0);
         }
@@ -62,9 +62,18 @@ public class GavinsVisual extends Visual {
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
         
-        //s.render();
-        //c.render();
-        cube.render();
-        l.render();
+        
+        
+        if (key == '1')
+        {
+            s.render();
+            c.render();
+        }
+
+        if (key == '2')
+        {
+            cube.render();
+            l.render();
+        }
     }
 }
