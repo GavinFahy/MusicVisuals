@@ -16,5 +16,6 @@ public class Instructions {
        gv.text("Press r to rewind", 300, 350);
        gv.text("Press 1 to get visual 1", 300, 370);
        gv.text("Press 2 to get visual 2", 300, 390);
+       gv.text("Press 3 to return to menu", 300, 410);
     }
 }

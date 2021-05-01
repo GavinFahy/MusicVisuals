@@ -76,6 +76,9 @@ public class GavinsVisual extends Visual {
             sphereOption = 1;
             circleOption = 1;
             instructionsOption = 0;
+
+            cubeOption = 0;
+            lineOption = 0;
         }
 
         if (key == '2')
@@ -83,6 +86,14 @@ public class GavinsVisual extends Visual {
            cubeOption = 1;
            lineOption = 1;
            instructionsOption = 0;
+
+           sphereOption = 0;
+           circleOption = 0;
+        }
+
+        if (key == '3')
+        {
+            instructionsOption = 1;
         }
 
         if(instructionsOption == 1)
