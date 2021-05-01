@@ -70,14 +70,6 @@ public class GavinsVisual extends Visual {
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
 
-        i.render();
-        
-        s.render();
-        c.render();
-
-        cube.render();
-        l.render();
-
         
         if (key == '1')
         {
@@ -90,6 +82,24 @@ public class GavinsVisual extends Visual {
         {
            cubeOption = 1;
            lineOption = 1;
+           instructionsOption = 0;
+        }
+
+        if(instructionsOption == 1)
+        {
+            i.render();
+        }
+
+        if(sphereOption == 1 && circleOption == 1)
+        {
+            s.render();
+            c.render();
+        }
+
+        if(cubeOption == 1 && lineOption == 1)
+        {
+            cube.render();
+            l.render();
         }
     }
 }
