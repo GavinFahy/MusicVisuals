@@ -14,7 +14,7 @@ public class GavinsVisual extends Visual {
     int sphereOption = 0;
     int circleOption = 0;
     int lineOption = 0;
-    int instructionsOption = 0;
+    int instructionsOption = 1;
 
     public void settings()
     {
@@ -72,17 +72,24 @@ public class GavinsVisual extends Visual {
 
         i.render();
         
+        s.render();
+        c.render();
+
+        cube.render();
+        l.render();
+
         
         if (key == '1')
         {
-            s.render();
-            c.render();
+            sphereOption = 1;
+            circleOption = 1;
+            instructionsOption = 0;
         }
 
         if (key == '2')
         {
-            cube.render();
-            l.render();
+           cubeOption = 1;
+           lineOption = 1;
         }
     }
 }
