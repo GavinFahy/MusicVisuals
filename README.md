@@ -1,6 +1,6 @@
 # Music Visualiser Project
 
-Name:
+Name: Gavin Fahy
 
 Student Number: 
 
