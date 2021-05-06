@@ -2,7 +2,7 @@
 
 Name: Gavin Fahy
 
-Student Number: 
+Student Number: C19507466
 
 ## Instructions
 - Fork this repository and use it a starter project for your assignment
@@ -14,6 +14,17 @@ Student Number:
 # Description of the assignment
 
 # Instructions
+To play music press p
+
+To stop the music press s
+
+To rewind the music to the beginning press r
+
+To switch to the first visual press 1
+
+To switch to the second visual press 2
+
+To switch back to the main menu press 3
 
 # How it works
 
