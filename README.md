@@ -210,7 +210,7 @@ public void render()
 
 This is an image using a relative URL:
 
-![An image](images/p8.png)
+![An image](images/Screenshot 2021-05-06 at 23.32.57.png)
 
 This is an image using an absolute URL:
 
