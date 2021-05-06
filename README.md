@@ -158,9 +158,20 @@ This code is the code for the sphere and is what I am proud of.
     angle += gv.getSmoothedAmplitude()*20;
 One new thing I learnt that stuck out to me in the process of creating the sphere method was the push and pop matirix parts of the code. As without it my entire visual would fall apart and it was enjoyable learning and seeing what would happen without those two lines of code.
 
-![An image](images/visual2.png)
+Main menu 
+This visual calles the Instructions.java class that contains all the text that is printed to the screen to display the menu I created.
+![An image](images/menu.png)
+
+First Visual
+This visual is called from the Sphere.java class to display the sphere 
+The Circle.java class is also called to display the circles
+![An image](images/visual1.png)
 
 Second Visual
+This visual is called from the Cube.java class for the cubes to be displayed
+The Line.java class is also called to display the lines in the visual
+![An image](images/visual2.png)
+
 
 
 # Markdown Tutorial
