@@ -160,16 +160,19 @@ One new thing I learnt that stuck out to me in the process of creating the spher
 
 Main menu 
 This visual calles the Instructions.java class that contains all the text that is printed to the screen to display the menu I created.
+
 ![An image](images/menu.png)
 
 First Visual
 This visual is called from the Sphere.java class to display the sphere 
 The Circle.java class is also called to display the circles
+
 ![An image](images/visual1.png)
 
 Second Visual
 This visual is called from the Cube.java class for the cubes to be displayed
 The Line.java class is also called to display the lines in the visual
+
 ![An image](images/visual2.png)
 
 
