@@ -158,8 +158,10 @@ This code is the code for the sphere and is what I am proud of.
     angle += gv.getSmoothedAmplitude()*20;
 One new thing I learnt that stuck out to me in the process of creating the sphere method was the push and pop matirix parts of the code. As without it my entire visual would fall apart and it was enjoyable learning and seeing what would happen without those two lines of code.
 
+![An image](images/visual2.png)
+
 Second Visual
-/Users/gavinfahy/Desktop/Screenshot 2021-05-06 at 23.32.57.png
+
 
 # Markdown Tutorial
 
@@ -210,7 +212,7 @@ public void render()
 
 This is an image using a relative URL:
 
-![An image](images/Screenshot 2021-05-06 at 23.32.57.png)
+![An image](images/.png)
 
 This is an image using an absolute URL:
 
