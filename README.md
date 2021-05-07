@@ -175,19 +175,7 @@ The Line.java class is also called to display the lines in the visual
 
 ![An image](images/visual2.png)
 
-
-
-# Markdown Tutorial
-This is a youtube video:
+This is my YouTube video of my assignment working.
 
 [![YouTube](images/YouTube)](https://www.youtube.com/watch?v=aTsr8dP0PrY)
-
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
