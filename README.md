@@ -180,7 +180,7 @@ The Line.java class is also called to display the lines in the visual
 # Markdown Tutorial
 This is a youtube video:
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=aTsr8dP0PrY)
+[![YouTube](mages/YouTube)](https://www.youtube.com/watch?v=aTsr8dP0PrY)
 
 This is a table:
 
